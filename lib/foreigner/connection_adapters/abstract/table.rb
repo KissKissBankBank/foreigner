@@ -46,7 +46,7 @@ module Foreigner
       def references_with_foreign_keys(*args)
         options = args.extract_options!
         options.delete(:foreign_key)
-        
+
         references_without_foreign_keys(*(args.dup << options))
       end
     end
